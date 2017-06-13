@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+     
+  </head>
+ 
+  <body ng-controller="myCtrl as vm">
+        
+        <div class="col-md-3"  bz-uploader 
+        ng-model="vm.Logo" 
+        up-id="vm.id" 
+        up-title="my Logo"
+        up-section="vm.name" 
+        up-limit="1">
+        </div>
+  </body>
+<script src="https://code.angularjs.org/latest/angular.min.js"></script> 
+<script src="/dist/angular-file-upload.min.js"></script>
+  <script src="script.js"></script>
+</html>

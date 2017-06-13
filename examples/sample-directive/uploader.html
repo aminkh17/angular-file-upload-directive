@@ -1,0 +1,22 @@
+
+<div class="well">
+    <b ng-show="up.upTitle">{{up.upTitle}}</b>
+    <a href="{{up.Model}}" ng-show="up.Model" target="_blank">
+        <img src="{{up.Model}}" width="100" class="img-thumbnail" />
+    </a>
+</div>
+<div class="well my-drop-zone" ng-repeat="item in up.uploader.queue">
+    <button type="button" class="btn btn-danger pull-right" ng-click="item.remove()" style="margin-top: -40px;">
+        <span class="glyphicon glyphicon-trash"></span>
+    </button>
+    <div ng-thumb="{ file: item._file, height: 100 }">
+        Photo drop zone
+
+    </div>
+    <div class="progress" style="margin-bottom: 0;">
+        <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+    </div>
+
+
+</div>
+<input type="file" nv-file-select="" uploader="up.uploader" />
