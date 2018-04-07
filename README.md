@@ -75,6 +75,27 @@ You could check out features of target browsers using http://caniuse.com/. For e
 | An image preview via Canvas (not built-in) | - | + | + | + | + |
 | AJAX headers | - | + | + | + | + |
 
+<<<<<<< HEAD
+## Tests
+Follow next steps for running tests:
+
+1. install `proctactor`, `koa`, `koa-static` and other dependencies
+```bash
+npm install
+```
+2. update selenium-web-driver (more info see [there](http://www.protractortest.org/#/tutorial#setup)) 
+```bash
+npm run tests/webdriver/update
+```
+3. start static-server (it should work when you will run tests)
+```bash
+npm run tests/server/start
+```
+4. open another terminal window and run tests
+```bash
+npm run tests/test
+```
+=======
 
 ## How to ask a question
 
@@ -89,3 +110,5 @@ When you emal me a question:
 - It requires from me to answer on same questions again and again
 - It is not a rational way. For example, if everybody who use code of this project will have emailed me a question then I will be receiving ~700 emails each day =)
 - It is a very slow way. I have not time for it.
+>>>>>>> master
+
